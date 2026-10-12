@@ -1,0 +1,227 @@
+[
+  {
+    "grup": "A",
+    "desc": "PT. Santos Jaya Abadi - Coffee",
+    "category": "Coffee"
+  },
+  {
+    "grup": "B",
+    "desc": "PT. Agel Langgeng - Candy",
+    "category": "Candy"
+  },
+  {
+    "grup": "D",
+    "desc": "PT. Inasentra Unisatya - Candy",
+    "category": "Candy"
+  },
+  {
+    "grup": "E",
+    "desc": "PT. Mony Saga Prima - Beverage",
+    "category": "Beverage"
+  },
+  {
+    "grup": "EDB",
+    "desc": "PT. So Good Food - Susu",
+    "category": "Susu"
+  },
+  {
+    "grup": "EDS",
+    "desc": "PT. So Good Food - Food",
+    "category": "Food"
+  },
+  {
+    "grup": "EES",
+    "desc": "PT. Pacific Food Indonesia - Snack",
+    "category": "Snack"
+  },
+  {
+    "grup": "EFF",
+    "desc": "PT. Pilar Menara Mas - Rice",
+    "category": "Rice"
+  },
+  {
+    "grup": "EG1",
+    "desc": "PT. Upfield Indonesia - Margarine",
+    "category": "Margarine"
+  },
+  {
+    "grup": "EH1",
+    "desc": "PT. Khong Guan Biscuit Factory Indonesia Ltd",
+    "category": ""
+  },
+  {
+    "grup": "EI1",
+    "desc": "PT. Serena Indopangan Industri",
+    "category": ""
+  },
+  {
+    "grup": "EJH",
+    "desc": "CV. Bio Cipta Mandiri - Home Care",
+    "category": "Home Care"
+  },
+  {
+    "grup": "EKS",
+    "desc": "PT. Jadi Abadi Corak Biscuit Factory Indonesia",
+    "category": ""
+  },
+  {
+    "grup": "ELH",
+    "desc": "PT. Indo Sukses Sentra Usaha - Home Care",
+    "category": "Home Care"
+  },
+  {
+    "grup": "EMT",
+    "desc": "PT. Perkebunan Nusantara VIII - Tea Bontah Celup",
+    "category": "Tea Bontah Celup"
+  },
+  {
+    "grup": "F",
+    "desc": "PT. Agel Langgeng - Biscuit",
+    "category": "Biscuit"
+  },
+  {
+    "grup": "G",
+    "desc": "PT. Santos Jaya Abadi - Beverage",
+    "category": "Beverage"
+  },
+  {
+    "grup": "H",
+    "desc": "PT. Inasentra Unisatya (Fastana) - Candy",
+    "category": "Candy"
+  },
+  {
+    "grup": "I",
+    "desc": "PT. Syahid Global International",
+    "category": ""
+  },
+  {
+    "grup": "IGF",
+    "desc": "PT. Sumber Tirta Hakiki",
+    "category": ""
+  },
+  {
+    "grup": "IHM",
+    "desc": "Machine - PT. Excelso Multirasa",
+    "category": "Machine"
+  },
+  {
+    "grup": "IIS",
+    "desc": "PT. Choice Plus Makmur - Biscuits GIZI Wafer",
+    "category": "Biscuits GIZI Wafer"
+  },
+  {
+    "grup": "IJB",
+    "desc": "PT. Hokkan Indonesia - Beverage Bontah RTD",
+    "category": "Beverage Bontah RTD"
+  },
+  {
+    "grup": "IKR",
+    "desc": "PT. Kapal Sakti Nusantara",
+    "category": ""
+  },
+  {
+    "grup": "ILB",
+    "desc": "PT. Wahana Pronatural TBK AIR ALAM",
+    "category": "AIR ALAM"
+  },
+  {
+    "grup": "IMS",
+    "desc": "PT. Shichiyo Mergonoto Makmur - Biscuits",
+    "category": "Biscuits"
+  },
+  {
+    "grup": "INF",
+    "desc": "PT. Santos Premium Krimer - Krimer",
+    "category": "Krimer"
+  },
+  {
+    "grup": "IOB",
+    "desc": "PT. Industri Susu Alam Murni - Beverage",
+    "category": "Beverage"
+  },
+  {
+    "grup": "IPM",
+    "desc": "Mirota KSM - Milk",
+    "category": "Milk"
+  },
+  {
+    "grup": "IQT",
+    "desc": "PT. Choice Plus Makmur - Tea -> Bontah tarik",
+    "category": "Tea Bontah tarik"
+  },
+  {
+    "grup": "IRF",
+    "desc": "PT. Wahana Pronatural TBK - Groceries",
+    "category": "Groceries"
+  },
+  {
+    "grup": "J",
+    "desc": "PT. Avila Prima Intra Makmur",
+    "category": ""
+  },
+  {
+    "grup": "K",
+    "desc": "PT. Triteguh Manunggal Sejati",
+    "category": ""
+  },
+  {
+    "grup": "L",
+    "desc": "PT. Dharana Inti Boga",
+    "category": ""
+  },
+  {
+    "grup": "M",
+    "desc": "PT. Suntory Garuda Beverage",
+    "category": ""
+  },
+  {
+    "grup": "N",
+    "desc": "Gula",
+    "category": "Gula"
+  },
+  {
+    "grup": "O",
+    "desc": "IMP Cosmetics - Personal Care",
+    "category": "Personal Care"
+  },
+  {
+    "grup": "P",
+    "desc": "PT. Manohara Asri",
+    "category": ""
+  },
+  {
+    "grup": "Q",
+    "desc": "PT. Santos Jaya Abadi - Machine",
+    "category": "Machine"
+  },
+  {
+    "grup": "R",
+    "desc": "PT. Choice Plus Makmur (Fastana) - Choco",
+    "category": "Choco"
+  },
+  {
+    "grup": "S",
+    "desc": "Fastana - Premix",
+    "category": "Premix"
+  },
+  {
+    "grup": "T",
+    "desc": "PT. Choice Plus Makmur (Fastana) - Cereal",
+    "category": "Cereal"
+  },
+  {
+    "grup": "U",
+    "desc": "PT. Inasentra Unisatya - Biscuit",
+    "category": "Biscuit"
+  },
+  {
+    "grup": "V",
+    "desc": "OTHERS",
+    "category": ""
+  },
+  {
+    "grup": "Y",
+    "desc": "Others Principal",
+    "category": ""
+  }
+]
