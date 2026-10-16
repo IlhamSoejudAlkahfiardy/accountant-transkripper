@@ -10,7 +10,7 @@ Dibuat untuk memudahkan penyesuaian logika/algoritma secara mandiri.
 
 import os
 import json
-import fitz  # PyMuPDF
+import pymupdf
 
 
 def load_category_map(category_json_path: str) -> dict:
@@ -215,7 +215,7 @@ def scan_pdf(pdf_path: str, category_json_path: str) -> list[dict]:
     """
     import re
     category_map = load_category_map(category_json_path)
-    doc = fitz.open(pdf_path)
+    doc = pymupdf.open(pdf_path)
     
     all_order_blocks = []
     current_order = None
