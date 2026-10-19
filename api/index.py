@@ -15,7 +15,9 @@ from order_scanner import scan_pdf
 # Determine static folder path (public folder in root)
 static_dir = os.path.join(root_dir, "public")
 app = Flask(__name__, static_folder=static_dir, static_url_path="")
+app.url_map.strict_slashes = False
 CORS(app, resources={r"/*": {"origins": "*"}})
+
 
 
 @app.after_request
@@ -57,12 +59,17 @@ def health_check():
     }), 200
 
 
-@app.route("/api/parse", methods=["POST", "OPTIONS"])
+@app.route("/api/parse", methods=["POST", "OPTIONS", "GET"])
+@app.route("/parse", methods=["POST", "OPTIONS", "GET"])
 def parse_pdf():
     if request.method == "OPTIONS":
         return jsonify({"status": "ok"}), 200
 
+    if request.method == "GET":
+        return jsonify({"status": "ready", "message": "Gunakan POST multipart/form-data untuk parse PDF"}), 200
+
     if "file" not in request.files:
+
 
         return jsonify({"error": "Tidak ada file yang diunggah. Silakan pilih file PDF."}), 400
 
