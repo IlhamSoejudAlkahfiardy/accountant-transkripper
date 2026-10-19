@@ -1,5 +1,5 @@
 """
-Local runner for Oracle Order & Credit Status Transcriber Web UI.
+Local runner for Credix Order & Credit Status Transcriber Web UI.
 Jalankan file ini untuk menjalankan web server lokal:
     python app.py
 Lalu buka di browser:
@@ -18,7 +18,7 @@ from api.index import app
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     print(f"\n=======================================================")
-    print(f"[*] Oracle Scanner Web App berjalan!")
+    print(f"[*] Credix Scanner Web App berjalan!")
     print(f"[>] Buka browser di: http://127.0.0.1:{port}")
     print(f"=======================================================\n")
     app.run(host="0.0.0.0", port=port, debug=True)

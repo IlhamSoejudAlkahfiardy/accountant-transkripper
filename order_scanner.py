@@ -3,7 +3,7 @@ Order & Credit Status Scanner Script
 ====================================
 Script ini digunakan untuk melakukan scanning dan transkripsi data order, limit kredit,
 piutang faktur, persentase overlimit, hari overdue, serta penentuan tingkat otorisasi
-berdasarkan dokumen PDF laporan Oracle dan matriks otorisasi (formula.jpeg).
+berdasarkan dokumen PDF laporan Credix dan matriks otorisasi (formula.jpeg).
 
 Dibuat untuk memudahkan penyesuaian logika/algoritma secara mandiri.
 """
@@ -218,7 +218,7 @@ def get_otorisasi_overdue(limit_kredit: float, hari_od: int) -> str:
 
 def scan_pdf(pdf_path: str, category_json_path: str) -> list[dict]:
     """
-    Parser dan scanner PDF yang sepenuhnya dinamis untuk laporan Oracle Reports (FRM-LOG-027).
+    Parser dan scanner PDF yang sepenuhnya dinamis untuk laporan Credix Reports (FRM-LOG-027).
     Mampu membaca dan memproses dokumen PDF apapun dengan tata letak laporan yang sama,
     termasuk order yang terpecah melintasi beberapa halaman (cross-page).
     """

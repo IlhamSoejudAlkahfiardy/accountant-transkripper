@@ -144,7 +144,7 @@ async function uploadAndParse(file) {
   const formData = new FormData();
   formData.append('file', file);
 
-  showLoading('Membaca dan memproses halaman laporan Oracle...');
+  showLoading('Membaca dan memproses halaman laporan Credix...');
   hideError();
 
   try {

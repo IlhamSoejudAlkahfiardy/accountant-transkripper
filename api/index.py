@@ -40,7 +40,7 @@ def get_category_path():
 def serve_index():
     if os.path.exists(os.path.join(static_dir, "index.html")):
         return send_from_directory(static_dir, "index.html")
-    return jsonify({"status": "ok", "message": "Oracle Scanner API is online"}), 200
+    return jsonify({"status": "ok", "message": "Credix Scanner API is online"}), 200
 
 
 @app.route("/<path:path>")
@@ -54,7 +54,7 @@ def serve_static(path):
 def health_check():
     return jsonify({
         "status": "healthy",
-        "service": "Oracle Order & Credit Scanner API",
+        "service": "Credix Order & Credit Scanner API",
         "version": "1.0.0"
     }), 200
 
