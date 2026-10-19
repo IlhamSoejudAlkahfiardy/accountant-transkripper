@@ -129,7 +129,8 @@ def get_otorisasi_overlimit(limit_kredit: float, pct_over: float, total_piutang:
          - > 30%: GM
     """
     if pct_over <= 0:
-        return "Tidak Ada (Under Limit)"
+        # return "Tidak Ada (Under Limit)"
+        return ""
     
     if pct_over <= 30:
         if limit_kredit <= 40_000_000:
@@ -143,23 +144,29 @@ def get_otorisasi_overlimit(limit_kredit: float, pct_over: float, total_piutang:
     else:  # pct_over > 30%
         if limit_kredit <= 40_000_000:
             if total_piutang <= 80_000_000:
-                return "BM (Maks. Piutang 80 jt)"
+                # return "BM (Maks. Piutang 80 jt)"
+                return "BM"
             elif total_piutang <= 100_000_000:
-                return "RGM (Maks. Piutang 100 jt)"
+                # return "RGM (Maks. Piutang 100 jt)"
+                return "RGM"
             elif total_piutang <= 300_000_000:
-                return "HOR (Maks. Piutang 300 jt)"
+                # return "HOR (Maks. Piutang 300 jt)"
+                return "HOR"
             else:
                 return "GM"
         elif limit_kredit <= 75_000_000:
             if total_piutang <= 200_000_000:
-                return "RGM (Maks. Piutang 200 jt)"
+                # return "RGM (Maks. Piutang 200 jt)"
+                return "RGM"
             elif total_piutang <= 300_000_000:
-                return "HOR (Maks. Piutang 300 jt)"
+                # return "HOR (Maks. Piutang 300 jt)"
+                return "HOR"
             else:
                 return "GM"
         elif limit_kredit <= 300_000_000:
             if total_piutang <= 600_000_000:
-                return "HOR (Head of Region)"
+                # return "HOR (Head of Region)"
+                return "HOR"
             else:
                 return "GM"
         else:
@@ -185,7 +192,8 @@ def get_otorisasi_overdue(limit_kredit: float, hari_od: int) -> str:
          - Overdue > 2 Hari: GM
     """
     if hari_od is None or hari_od <= 0:
-        return "Tidak Ada (Tidak Overdue)"
+        # return "Tidak Ada (Tidak Overdue)"
+        return ""
     
     if hari_od <= 2:
         if limit_kredit <= 40_000_000:
@@ -202,7 +210,8 @@ def get_otorisasi_overdue(limit_kredit: float, hari_od: int) -> str:
         elif limit_kredit <= 75_000_000:
             return "HOR"
         elif limit_kredit <= 300_000_000:
-            return "GM (General Manager)"
+            # return "GM (General Manager)"
+            return "GM"
         else:
             return "GM"
 
@@ -215,7 +224,11 @@ def scan_pdf(pdf_path: str, category_json_path: str) -> list[dict]:
     """
     import re
     category_map = load_category_map(category_json_path)
-    doc = pymupdf.open(pdf_path)
+    if isinstance(pdf_path, (bytes, bytearray)):
+        doc = pymupdf.open(stream=pdf_path, filetype="pdf")
+    else:
+        doc = pymupdf.open(pdf_path)
+
     
     all_order_blocks = []
     current_order = None
@@ -382,7 +395,9 @@ def scan_pdf(pdf_path: str, category_json_path: str) -> list[dict]:
                         }
                         sales_entries.append(row_entry)
                         if ord_amt_words:
-                            primary_sales_row = row_entry
+                            row_ord_val = float(ord_amt_words[0].replace(",", ""))
+                            if primary_sales_row is None or abs(row_ord_val - amt_num) < 1.0:
+                                primary_sales_row = row_entry
                             
                 if ord_amt_words:
                     row_order_val = float(ord_amt_words[0].replace(",", ""))
@@ -441,18 +456,11 @@ def scan_pdf(pdf_path: str, category_json_path: str) -> list[dict]:
             
         primary_limit = primary_sales_row["limit_num"] if primary_sales_row else 0.0
         
-        # Susun tampilan Limit kredit
-        if sales_entries:
-            other_entries = [s for s in sales_entries if s != primary_sales_row]
-            sorted_entries = [primary_sales_row] + other_entries
-            limit_str_parts = []
-            seen = set()
-            for s in sorted_entries:
-                key = (s["limit_num"], s["salesman"], s["term"])
-                if key not in seen and s["limit_num"] > 0:
-                    seen.add(key)
-                    limit_str_parts.append(f"Rp {s['limit_num']:,.0f} (Salesman: {s['salesman']}, Term: {s['term']})")
-            limit_kredit_display = " / ".join(limit_str_parts) if limit_str_parts else f"Rp {primary_limit:,.0f}"
+        # Susun tampilan Limit kredit (hanya baris yang sebaris dengan nilai kolom ORDER)
+        if primary_sales_row:
+            limit_kredit_display = f"Rp {primary_sales_row['limit_num']:,.0f}"
+        elif sales_entries:
+            limit_kredit_display = f"Rp {sales_entries[0]['limit_num']:,.0f}"
         else:
             limit_kredit_display = "Rp 0"
             
@@ -509,10 +517,11 @@ def scan_pdf(pdf_path: str, category_json_path: str) -> list[dict]:
         # Quantity dengan kategori
         qty_display = format_quantity_with_category(grup_order, total_box, total_non_box, category_map)
         
-        parsed_orders.append({
+        order_item = {
             "order_num": order_num,
             "tanggal_order": tanggal_order,
             "nama_toko": nama_toko,
+            "nama_toko_str": f"{nama_toko} STR {oto_ol or oto_od}".strip(),
             "nomor_customer": clean_customer_number(nomor_cust_raw),
             "limit_kredit": limit_kredit_display,
             "amount_penjualan": amt_str if amt_str else "Rp 0",
@@ -525,9 +534,12 @@ def scan_pdf(pdf_path: str, category_json_path: str) -> list[dict]:
             "overdue_str": overdue_display,
             "oto_overlimit": oto_ol,
             "oto_overdue": oto_od
-        })
+        }
+        order_item["formatted_transcript"] = format_transcript_result(order_item)
+        parsed_orders.append(order_item)
         
     return parsed_orders
+
 
 
 def format_transcript_result(data: dict) -> str:
@@ -538,7 +550,7 @@ def format_transcript_result(data: dict) -> str:
     
     output_lines = [
         f"Tanggal order       : {data['tanggal_order']}",
-        f"Nama toko           : {data['nama_toko']}",
+        f"Nama toko           : {data['nama_toko']} STR {data['oto_overlimit'] or data['oto_overdue']}",
         f"Nomor customer      : {data['nomor_customer']}",
         f"Limit kredit        : {data['limit_kredit']}",
         "",

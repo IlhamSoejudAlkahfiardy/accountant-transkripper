@@ -1,13 +1,13 @@
 [
   {
     "grup": "A",
-    "desc": "PT. Santos Jaya Abadi - Coffee",
-    "category": "Coffee"
+    "desc": "PT. Santos Jaya Abadi - Kopi Reguler SJA",
+    "category": "Kopi Reguler SJA"
   },
   {
     "grup": "B",
-    "desc": "PT. Agel Langgeng - Candy",
-    "category": "Candy"
+    "desc": "PT. Agel Langgeng - Candy Agel",
+    "category": "Candy Agel"
   },
   {
     "grup": "D",
@@ -21,13 +21,13 @@
   },
   {
     "grup": "EDB",
-    "desc": "PT. So Good Food - Susu",
-    "category": "Susu"
+    "desc": "PT. So Good Food - Susu So Good",
+    "category": "Susu So Good"
   },
   {
     "grup": "EDS",
-    "desc": "PT. So Good Food - Food",
-    "category": "Food"
+    "desc": "PT. So Good Food - Food So Good",
+    "category": "Food So Good"
   },
   {
     "grup": "EES",
@@ -56,8 +56,8 @@
   },
   {
     "grup": "EJH",
-    "desc": "CV. Bio Cipta Mandiri - Home Care",
-    "category": "Home Care"
+    "desc": "CV. Bio Cipta Mandiri - Home Care Bio",
+    "category": "Home Care Bio"
   },
   {
     "grup": "EKS",
@@ -76,13 +76,13 @@
   },
   {
     "grup": "F",
-    "desc": "PT. Agel Langgeng - Biscuit",
-    "category": "Biscuit"
+    "desc": "PT. Agel Langgeng - Biscuit Agel",
+    "category": "Biscuit Agel"
   },
   {
     "grup": "G",
-    "desc": "PT. Santos Jaya Abadi - Beverage",
-    "category": "Beverage"
+    "desc": "PT. Santos Jaya Abadi - Beverage SJA",
+    "category": "Beverage SJA"
   },
   {
     "grup": "H",
@@ -96,8 +96,8 @@
   },
   {
     "grup": "IGF",
-    "desc": "PT. Sumber Tirta Hakiki",
-    "category": ""
+    "desc": "PT. Sumber Tirta Hakiki - Food STH",
+    "category": "Food STH"
   },
   {
     "grup": "IHM",
@@ -116,8 +116,8 @@
   },
   {
     "grup": "IKR",
-    "desc": "PT. Kapal Sakti Nusantara",
-    "category": ""
+    "desc": "PT. Kapal Sakti Nusantara - Rokok Kapal Sakti",
+    "category": "Rokok Kapal Sakti"
   },
   {
     "grup": "ILB",
@@ -131,13 +131,13 @@
   },
   {
     "grup": "INF",
-    "desc": "PT. Santos Premium Krimer - Krimer",
-    "category": "Krimer"
+    "desc": "PT. Santos Premium Krimer - Krimer SPK",
+    "category": "Krimer SPK"
   },
   {
     "grup": "IOB",
-    "desc": "PT. Industri Susu Alam Murni - Beverage",
-    "category": "Beverage"
+    "desc": "PT. Industri Susu Alam Murni - Beverage Gizi",
+    "category": "Beverage Gizi"
   },
   {
     "grup": "IPM",
@@ -181,18 +181,18 @@
   },
   {
     "grup": "O",
-    "desc": "IMP Cosmetics - Personal Care",
-    "category": "Personal Care"
+    "desc": "IMP Cosmetics - Personal Care Implora",
+    "category": "Personal Care Implora"
   },
   {
     "grup": "P",
-    "desc": "PT. Manohara Asri",
-    "category": ""
+    "desc": "PT. Manohara Asri -  Snack Mayasi",
+    "category": "Snack Mayasi"
   },
   {
     "grup": "Q",
-    "desc": "PT. Santos Jaya Abadi - Machine",
-    "category": "Machine"
+    "desc": "PT. Santos Jaya Abadi - Machine SJA",
+    "category": "Machine SJA"
   },
   {
     "grup": "R",
