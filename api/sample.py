@@ -11,7 +11,7 @@ if root_dir not in sys.path:
 if current_dir not in sys.path:
     sys.path.insert(0, current_dir)
 
-from order_scanner import scan_pdf
+from transcriber import scan_pdf
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False

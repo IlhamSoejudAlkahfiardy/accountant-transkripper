@@ -1,143 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Credix Order & Credit Transcriber | Scanner PDF</title>
-  <meta name="description" content="Aplikasi scanner dan transkripsi dokumen PDF Credix Reports untuk kalkulasi order, piutang, limit kredit, overdue, dan otorisasi.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="app-container">
-    <!-- Header -->
-    <header class="app-header">
-      <div class="brand">
-        <div class="brand-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-            <polyline points="14 2 14 8 20 8"></polyline>
-            <line x1="16" y1="13" x2="8" y2="13"></line>
-            <line x1="16" y1="17" x2="8" y2="17"></line>
-            <polyline points="10 9 9 9 8 9"></polyline>
-          </svg>
-        </div>
-        <div>
-          <div class="badge-tag">Credix Reports FRM-LOG-027</div>
-          <h1>Order & Credit Status Transcriber</h1>
-        </div>
-      </div>
-      <div class="header-desc">
-        Unggah file PDF order untuk mengekstrak data order, status kredit, overlimit, overdue, dan tingkat otorisasi secara otomatis dengan field siap salin.
-      </div>
-    </header>
-
-    <!-- Upload Card -->
-    <section class="card upload-card" id="uploadCard">
-      <div class="drop-zone" id="dropZone">
-        <input type="file" id="fileInput" accept=".pdf" class="file-input" />
-        <div class="drop-zone-content">
-          <div class="upload-icon-wrapper">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="17 8 12 3 7 8"></polyline>
-              <line x1="12" y1="3" x2="12" y2="15"></line>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credix Order & Credit Transcriber | Scanner PDF</title>
+    <meta
+      name="description"
+      content="Aplikasi scanner dan transkripsi dokumen PDF Credix Reports untuk kalkulasi order, piutang, limit kredit, overdue, dan otorisasi."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="app-header">
+        <div class="brand">
+          <div class="brand-icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+              ></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
             </svg>
           </div>
-          <h3>Pilih atau Tarik File PDF ke Sini</h3>
-          <p class="drop-subtitle">Mendukung single file dokumen PDF laporan Credix (.pdf)</p>
-          <div class="drop-actions">
-            <button type="button" class="btn btn-primary" id="browseBtn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
-              Pilih Dokumen PDF
-            </button>
-            <button type="button" class="btn btn-ghost" id="sampleBtn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-              Coba File Contoh
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- File Details (shown when file is selected) -->
-      <div class="selected-file-bar hidden" id="selectedFileBar">
-        <div class="file-info-group">
-          <div class="pdf-tag-icon">PDF</div>
           <div>
-            <div class="file-name" id="selectedFileName">laporan_order.pdf</div>
-            <div class="file-meta" id="selectedFileSize">0 KB</div>
+            <div class="badge-tag">Credix Reports FRM-LOG-027</div>
+            <h1>Order & Credit Status Transcriber</h1>
           </div>
         </div>
-        <div class="file-action-group">
-          <button type="button" class="btn btn-secondary btn-sm" id="removeFileBtn">Ganti File</button>
-          <button type="button" class="btn btn-primary btn-sm" id="processBtn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-            Proses & Parse PDF
-          </button>
+        <div class="header-desc">
+          Unggah file PDF order untuk mengekstrak data order, status kredit,
+          overlimit, overdue, dan tingkat otorisasi secara otomatis dengan field
+          siap salin.
         </div>
-      </div>
-    </section>
+      </header>
 
-    <!-- Loading State -->
-    <div class="loading-state hidden" id="loadingState">
-      <div class="spinner"></div>
-      <h4>Memproses dan Mengekstrak Data Dokumen...</h4>
-      <p id="loadingMessage">Membaca halaman, mendeteksi tabel order, dan menghitung formula otorisasi...</p>
+      <!-- Upload Card -->
+      <section class="card upload-card" id="uploadCard">
+        <div class="drop-zone" id="dropZone">
+          <input type="file" id="fileInput" accept=".pdf" class="file-input" />
+          <div class="drop-zone-content">
+            <div class="upload-icon-wrapper">
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+            </div>
+            <h3>Pilih atau Tarik File PDF ke Sini</h3>
+            <p class="drop-subtitle">
+              Mendukung single file dokumen PDF laporan Credix (.pdf)
+            </p>
+            <div class="drop-actions">
+              <button type="button" class="btn btn-primary" id="browseBtn">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                Pilih Dokumen PDF
+              </button>
+              <button type="button" class="btn btn-ghost" id="sampleBtn">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+                Coba File Contoh
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- File Details (shown when file is selected) -->
+        <div class="selected-file-bar hidden" id="selectedFileBar">
+          <div class="file-info-group">
+            <div class="pdf-tag-icon">PDF</div>
+            <div>
+              <div class="file-name" id="selectedFileName">
+                laporan_order.pdf
+              </div>
+              <div class="file-meta" id="selectedFileSize">0 KB</div>
+            </div>
+          </div>
+          <div class="file-action-group">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm"
+              id="removeFileBtn"
+            >
+              Ganti File
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              id="processBtn"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Proses & Parse PDF
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Loading State -->
+      <div class="loading-state hidden" id="loadingState">
+        <div class="spinner"></div>
+        <h4>Memproses dan Mengekstrak Data Dokumen...</h4>
+        <p id="loadingMessage">
+          Membaca halaman, mendeteksi tabel order, dan menghitung formula
+          otorisasi...
+        </p>
+      </div>
+
+      <!-- Error State -->
+      <div class="error-banner hidden" id="errorBanner">
+        <div class="error-icon">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+        </div>
+        <div class="error-text" id="errorMessage">
+          Terjadi kesalahan saat memproses file.
+        </div>
+        <button type="button" class="btn-close" id="closeErrorBtn">
+          &times;
+        </button>
+      </div>
+
+      <!-- Results Section -->
+      <section class="results-section hidden" id="resultsSection">
+        <!-- Summary Bar -->
+        <div class="results-summary-bar">
+          <div class="summary-left">
+            <span class="summary-pill" id="ordersCountBadge"
+              >0 Order Ditemukan</span
+            >
+            <span class="summary-filename" id="resultsFilename"
+              >dokumen.pdf</span
+            >
+          </div>
+          <div class="summary-actions">
+            <button
+              type="button"
+              class="btn btn-outline btn-sm"
+              id="copyAllTranscriptsBtn"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path
+                  d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                ></path>
+              </svg>
+              Salin Semua Transkrip (Semua Order)
+            </button>
+            <button type="button" class="btn btn-ghost btn-sm" id="resetBtn">
+              Unggah File Lain
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Nav for multiple orders -->
+        <div class="order-tabs hidden" id="orderTabs">
+          <!-- Dynamically injected tabs -->
+        </div>
+
+        <!-- Container for Order Cards -->
+        <div class="orders-list" id="ordersList">
+          <!-- Rendered order cards will appear here -->
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="app-footer">
+        <p>
+          Credix Reports Scanner &bull; Sesuai Ketentuan Matriks Otorisasi
+          Overlimit & Overdue
+        </p>
+      </footer>
     </div>
 
-    <!-- Error State -->
-    <div class="error-banner hidden" id="errorBanner">
-      <div class="error-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-      </div>
-      <div class="error-text" id="errorMessage">Terjadi kesalahan saat memproses file.</div>
-      <button type="button" class="btn-close" id="closeErrorBtn">&times;</button>
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+      >
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+      <span id="toastMessage">Tersalin ke clipboard!</span>
     </div>
 
-    <!-- Results Section -->
-    <section class="results-section hidden" id="resultsSection">
-      <!-- Summary Bar -->
-      <div class="results-summary-bar">
-        <div class="summary-left">
-          <span class="summary-pill" id="ordersCountBadge">0 Order Ditemukan</span>
-          <span class="summary-filename" id="resultsFilename">dokumen.pdf</span>
-        </div>
-        <div class="summary-actions">
-          <button type="button" class="btn btn-outline btn-sm" id="copyAllTranscriptsBtn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            Salin Semua Transkrip (Semua Order)
-          </button>
-          <button type="button" class="btn btn-ghost btn-sm" id="resetBtn">
-            Unggah File Lain
-          </button>
-        </div>
-      </div>
-
-      <!-- Quick Nav for multiple orders -->
-      <div class="order-tabs hidden" id="orderTabs">
-        <!-- Dynamically injected tabs -->
-      </div>
-
-      <!-- Container for Order Cards -->
-      <div class="orders-list" id="ordersList">
-        <!-- Rendered order cards will appear here -->
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="app-footer">
-      <p>Credix Reports Scanner &bull; Sesuai Ketentuan Matriks Otorisasi Overlimit & Overdue</p>
-    </footer>
-  </div>
-
-  <!-- Toast Notification -->
-  <div class="toast" id="toast">
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-    <span id="toastMessage">Tersalin ke clipboard!</span>
-  </div>
-
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
