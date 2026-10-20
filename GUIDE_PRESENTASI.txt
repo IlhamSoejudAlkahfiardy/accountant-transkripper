@@ -1,0 +1,302 @@
+================================================================================
+         PANDUAN & RUNDOWN PRESENTASI: SISTEM SCANNER LAPORAN ORDER CREDIX
+================================================================================
+Alamat Website  : https://accountant-nine-omega.vercel.app/
+Target Audiens  : Manajemen, Pimpinan, Tim Sales, Tim Kredit/Admin, atau Klien
+Pembawa Acara   : Tim Operasional / Sales / Admin / Bisnis (Non-IT)
+Estimasi Durasi : 10 - 15 Menit
+
+--------------------------------------------------------------------------------
+DAFTAR ISI PANDUAN
+--------------------------------------------------------------------------------
+1. RINGKASAN & TUJUAN PRESENTASI
+2. PERSIAPAN SEBELUM PRESENTASI (SANGAT MUDAH & PRAKTIS)
+3. RUNDOWN SUSUNAN ACARA (10 - 15 MENIT)
+4. CONTOH NASKAH & KATA-KATA SAAT PRESENTASI (TALKING POINTS)
+   - Bagian 1: Pembukaan & Keluhan Kerja Harian (2 Menit)
+   - Bagian 2: Solusi Website Scanner (2 Menit)
+   - Bagian 3: Demo Langsung di Depan Audiens (5 Menit)
+   - Bagian 4: Penjelasan Nilai Tambah & SOP Otorisasi (3 Menit)
+   - Bagian 5: Penutup & Tanya Jawab (2 Menit)
+5. PANDUAN LANGKAH DEMO WEBSITE (APA SAJA YANG HARUS DIKLIK)
+6. TABEL ATURAN OTORISASI (CONTEKAN JIKA DITANYA ATASAN)
+7. CONTEKAN JAWABAN TANYA JAWAB (Q&A UNTUK ORANG AWAM)
+
+================================================================================
+1. RINGKASAN & TUJUAN PRESENTASI
+================================================================================
+- Apa itu aplikasi ini?
+  Sebuah website yang membantu tim kerja membaca laporan pesanan "Credix" 
+  (format PDF) secara otomatis.
+
+- Masalah apa yang diselesaikan?
+  Selama ini, staf harus membaca dokumen PDF tebal secara manual, menghitung 
+  pakai kalkulator apakah toko tersebut lewat limit kredit (overlimit) atau 
+  ada tunggakan (overdue), lalu bolak-balik mengecek tabel aturan approval 
+  untuk tahu siapa atasan yang harus tanda tangan, kemudian mengetik ulang 
+  hasilnya ke pesan WhatsApp / email.
+
+- Apa solusinya?
+  Cukup buka website, masukkan file PDF, maka dalam 2 detik seluruh data toko, 
+  rincian piutang, hitungan overlimit, dan nama jabatan atasan yang berhak 
+  menyetujui (SM, BM, RGM, HOR, atau GM) langsung muncul dan siap disalin!
+
+================================================================================
+2. PERSIAPAN SEBELUM PRESENTASI (SANGAT MUDAH & PRAKTIS)
+================================================================================
+Anda TIDAK PERLU menginstal aplikasi apapun, TIDAK PERLU keahlian teknis.
+
+Checklist sebelum tampil:
+[ ] 1. Pastikan laptop/komputer terhubung ke internet.
+[ ] 2. Buka browser (Google Chrome, Microsoft Edge, atau browser lainnya).
+[ ] 3. Buka alamat website berikut:
+       https://accountant-nine-omega.vercel.app/
+[ ] 4. Buka tab baru di browser dan biarkan halaman website siap tampil.
+[ ] 5. (Opsional) Siapkan 1 file contoh PDF laporan Credix di laptop Anda, 
+       ATAU Anda cukup gunakan tombol "Coba File Contoh" yang sudah tersedia 
+       di website saat demo nanti.
+[ ] 6. Buka Notepad atau aplikasi WhatsApp Web sebagai tempat pembuktian 
+       hasil salin (Paste / Ctrl+V).
+
+================================================================================
+3. RUNDOWN SUSUNAN ACARA (TOTAL 10 - 15 MENIT)
+================================================================================
++---------+----------------------------+---------------------------------------+
+| Menit   | Sesi                       | Fokus Utama                           |
++---------+----------------------------+---------------------------------------+
+| 00 - 02 | Pembukaan & Masalah Harian | Cerita kendala membaca PDF manual     |
+| 02 - 04 | Mengenalkan Website Solusi | Menjelaskan website yang dibuat       |
+| 04 - 09 | Demo Langsung di Layar     | Memasukkan PDF & salin transkrip      |
+| 09 - 12 | Penjelasan Akurasi & SOP   | Mengapa hitungan & jabatannya tepat   |
+| 12 - 14 | Manfaat Nyata untuk Tim    | Hemat waktu & bebas salah hitung      |
+| 14 - 15 | Penutup & Tanya Jawab      | Sesi tanya jawab santai               |
++---------+----------------------------+---------------------------------------+
+
+================================================================================
+4. CONTOH NASKAH & KATA-KATA SAAT PRESENTASI (TALKING POINTS)
+================================================================================
+Gunakan gaya bahasa santai, percaya diri, dan profesional berikut ini:
+
+--------------------------------------------------------------------------------
+BAGIAN 1: PEMBUKAAN & KELUHAN KERJA HARIAN (Menit 00:00 - 02:00)
+--------------------------------------------------------------------------------
+"Selamat pagi / siang Bapak/Ibu dan rekan-rekan sekalian.
+
+Hari ini saya ingin membagikan sebuah inovasi baru yang akan sangat mempermudah 
+dan mempercepat pekerjaan operasional kita sehari-hari, khususnya dalam proses 
+pengecekan dan persetujuan order pelanggan.
+
+Seperti yang kita ketahui bersama, setiap kali ada laporan pesanan Credix masuk, 
+tim kita biasanya harus:
+1. Membuka dokumen PDF laporan yang halamannya sering kali banyak dan padat teks.
+2. Mengambil kalkulator untuk menghitung secara manual: apakah order baru ditambah 
+   piutang lama toko tersebut sudah melebihi batas kredit atau belum?
+3. Mencari-cari apakah ada tagihan faktur yang sudah jatuh tempo atau menunggak.
+4. Melihat lembaran tabel SOP otorisasi: apakah order ini cukup disetujui 
+   Branch Manager, atau harus naik ke Regional GM, Head of Region, sampai General Manager?
+5. Terakhir, mengetik ulang kembali rangkuman tersebut ke pesan chat WhatsApp 
+   untuk meminta persetujuan atasan.
+
+Proses manual ini rata-rata memakan waktu 5 sampai 10 menit per pesanan. Jika ada 
+puluhan toko setiap hari, waktu tim habis hanya untuk menghitung dan mengetik ulang. 
+Selain itu, risiko salah hitung angka atau salah menentukan atasan persetujuan 
+cukup tinggi.
+
+Kini, semua proses tersebut dapat diselesaikan hanya dalam waktu 2 detik melalui 
+website yang telah kami siapkan."
+
+--------------------------------------------------------------------------------
+BAGIAN 2: MENGENALKAN WEBSITE SOLUSI (Menit 02:00 - 04:00)
+--------------------------------------------------------------------------------
+"Website ini kami namakan 'Credix Order & Credit Status Transcriber'.
+
+Kelebihan utama website ini:
+1. Sangat Mudah Digunakan:
+   Tidak perlu instal program apapun di komputer. Cukup buka link di browser 
+   laptop maupun ponsel pintar Anda.
+2. Otomatis & Cerdas:
+   Cukup masukkan file PDF laporan Credix, sistem akan langsung mengenali nama toko, 
+   nomor pelanggan, limit kredit, rincian faktur piutang, hingga persentase overlimit.
+3. Otomatis Menentukan Siapa yang Berhak Menyetujui:
+   Sistem sudah diprogram sesuai SOP resmi perusahaan. Jadi atasan yang harus 
+   memberi izin (apakah SM, BM, RGM, HOR, atau GM) akan langsung tertulis otomatis.
+4. Siap Kirim ke WhatsApp:
+   Tersedia tombol salin sekali klik. Hasil teksnya sudah rapi dan terstandar, 
+   tinggal ditempel (Paste) ke grup chat atau laporan approval."
+
+--------------------------------------------------------------------------------
+BAGIAN 3: DEMO LANGSUNG DI LAYAR (Menit 04:00 - 09:00) - TAHAP UTAMA!
+--------------------------------------------------------------------------------
+(Arahkan layar proyektor / share screen ke browser yang membuka:
+ https://accountant-nine-omega.vercel.app/)
+
+"Mari kita lihat bersama bagaimana website ini bekerja secara langsung.
+
+[Langkah 1: Menampilkan Halaman Web]
+Di layar saat ini tampil halaman utama website kita di alamat: 
+https://accountant-nine-omega.vercel.app/
+Tampilannya bersih, sederhana, dan mudah dimengerti siapa saja.
+
+[Langkah 2: Memasukkan Dokumen PDF]
+Di sini ada area kotak unggah file. Kita bisa menarik file PDF ke kotak ini, 
+memilih file lewat tombol 'Pilih Dokumen PDF', atau jika ingin mencoba langsung, 
+kita cukup menekan tombol 'Coba File Contoh'.
+
+Sekarang saya klik tombol 'Coba File Contoh'.
+(Klik tombol tersebut di layar)
+
+Perhatikan Bapak/Ibu: hanya dalam waktu sekitar 1 detik, seluruh halaman PDF 
+tadi langsung selesai dibaca dan hasilnya langsung tertata rapi di bawah!
+
+[Langkah 3: Menunjukkan Data Hasil Pemindaian]
+Sistem mendeteksi ada 4 pesanan toko di dalam laporan ini.
+Kita bisa berpindah antar toko dengan mudah cukup dengan mengklik tab toko di atas.
+
+Mari kita lihat contoh toko pertama:
+- Tanggal Order otomatis terbaca.
+- Nama Toko langsung dilengkapi kode otorisasi, contohnya: 'TOKO HIDUP BARU STR BM'.
+- Nomor Customer sudah dibersihkan dari angka depan yang tidak perlu.
+- Kategori barang langsung dikenali otomatis, misalnya barang 'Personal Care' atau 'Coffee'.
+- Nilai Overlimit dihitung otomatis: Toko ini overlimit sebesar Rp 650.978 (atau 325%).
+- Dan yang paling penting, sistem langsung memberi tahu pejabat yang berwenang 
+  memberi izin adalah: BM (Branch Manager).
+
+[Langkah 4: Menunjukkan Toko dengan Rincian Piutang Faktur]
+Sekarang saya klik tab toko berikutnya (contoh Toko CIPTA):
+- Di sini terlihat ada daftar faktur yang masih menggantung, lengkap dengan nomor faktur, 
+  nilai tagihan, jatuh tempo, dan keterlambatannya (contoh: Overdue 25 Hari).
+- Karena toko ini limitnya besar dan ada tagihan terlambat 25 hari, sistem langsung 
+  menentukan bahwa otorisasi overlimit harus ke HOR (Head of Region) dan otorisasi 
+  overdue harus ke GM (General Manager).
+- Staf kita tidak perlu lagi bingung membuka lembaran tabel SOP di meja.
+
+[Langkah 5: Membuktikan Kemudahan Fitur Salin (Copy-Paste)]
+Setiap data memiliki tombol salin di sampingnya.
+Namun yang paling praktis adalah tombol di bagian bawah: 'Salin Transkrip Order Ini'.
+
+Saya klik tombol 'Salin Transkrip Order Ini'.
+(Klik tombol tersebut, muncul notifikasi hijau 'Tersalin ke clipboard!')
+
+Sekarang saya buka Notepad / chat WhatsApp, lalu tekan Tempel (Paste):
+Lihat, seluruh format pesan sudah tersusun rapi:
+- Tanggal order
+- Nama toko & STR
+- Limit kredit & jumlah orderan
+- Rincian faktur piutang
+- Persentase overlimit & status keterlambatan
+- Nama atasan yang harus menyetujui
+
+Format ini seragam, rapi, dan tidak ada lagi salah ketik atau salah hitung."
+
+--------------------------------------------------------------------------------
+BAGIAN 4: PENJELASAN AKURASI & SOP PERUSAHAAN (Menit 09:00 - 12:00)
+--------------------------------------------------------------------------------
+"Bapak/Ibu mungkin bertanya: apakah hitungan dan penentuan pejabat persetujuan 
+ini sudah sesuai dengan aturan baku perusahaan?
+
+Jawabannya: 100% tepat mengacu pada SOP otorisasi resmi perusahaan.
+
+1. Rumus Perhitungan Overlimit:
+   Sistem menjumlahkan total pesanan baru ditambah sisa piutang yang belum lunas, 
+   kemudian dikurangi limit kredit toko.
+   Jika hasilnya positif, sistem langsung menghitung berapa persen kelebihannya.
+
+2. Aturan Keterlambatan (Overdue):
+   Sistem mengetahui ketentuan khusus:
+   - Apabila toko berstatus overlimit, maka hari keterlambatan akan selalu diperingatkan.
+   - Apabila toko belum overlimit, sistem secara cerdas hanya akan menampilkan 
+     keterlambatan jika faktur tersebut menyangkut produk utama Grup A (Kopi Reguler). 
+     Sehingga pesanan yang aman tidak terhambat tanpa alasan.
+
+3. Jenjang Persetujuan Pejabat:
+   Semua batasan telah tertanam di sistem:
+   - Toko dengan limit kecil yang overlimit ringan cukup disetujui Sales Manager (SM) 
+     atau Branch Manager (BM).
+   - Toko dengan nilai piutang besar otomatis dinaikkan ke Regional GM (RGM), 
+     Head of Region (HOR), hingga General Manager (GM).
+   Hal ini memastikan tata kelola kredit perusahaan tetap aman dan patuh SOP."
+
+--------------------------------------------------------------------------------
+BAGIAN 5: MANFAAT NYATA & PENUTUP (Menit 12:00 - 15:00)
+--------------------------------------------------------------------------------
+"Kesimpulannya, manfaat nyata yang langsung dirasakan:
+1. Efisiensi Waktu:
+   Pekerjaan yang tadinya butuh 10 menit per laporan kini selesai dalam 2 detik.
+2. Bebas Human Error:
+   Tidak ada lagi salah rumus kalkulator dan tidak ada lagi order lolos tanpa 
+   persetujuan pejabat yang tepat.
+3. Akses Kapan Saja & Di Mana Saja:
+   Cukup simpan link https://accountant-nine-omega.vercel.app/ di bookmark 
+   browser komputer atau handphone masing-masing, tim sudah bisa langsung pakai 
+   tanpa perlu bantuan tim IT.
+
+Demikian pengenalan website ini. Saya persilakan jika ada pertanyaan atau tanggapan 
+dari Bapak/Ibu sekalian. Terima kasih."
+
+================================================================================
+5. PANDUAN LANGKAH DEMO WEBSITE (PANDUAN KLIK DEMO)
+================================================================================
+Urutan klik saat Anda berdiri di depan audiens:
+
+1. Buka browser -> Masuk ke https://accountant-nine-omega.vercel.app/
+2. Klik tombol "Coba File Contoh" (warna abu-abu/outline di tengah).
+3. Tunggu 1-2 detik hingga layar berganti menampilkan kartu hasil order.
+4. Klik salah satu tab toko di bagian atas untuk memperlihatkan toko yang berbeda.
+5. Arahkan kursor / mouse ke badge overlimit (berwarna merah/oranye jika overlimit).
+6. Tunjukkan baris "Otorisasi OverLimit" dan "Otorisasi OverDue" (misal: BM / HOR / GM).
+7. Klik tombol "Salin Transkrip Order Ini" di bagian bawah kartu.
+8. Buka Notepad / Word / WA Web, lalu tekan Ctrl+V untuk memperlihatkan teks yang tersalin.
+9. Tunjukkan tombol "Salin Semua Transkrip" di kanan atas jika ada banyak order 
+   yang mau disalin sekaligus dalam satu kali klik.
+
+================================================================================
+6. TABEL ATURAN OTORISASI (CONTEKAN JIKA DITANYA ATASAN)
+================================================================================
+Jika atasan bertanya: "Dari mana muncul nama BM atau HOR itu?", Anda bisa 
+menjawab dengan contekan ringkas ini:
+
+A. JIKA TOKO OVERLIMIT (MELEBIHI BATAS KREDIT):
+   - Limit Toko s.d 40 Juta   : Cukup SM (jika overlimit <=30%) atau BM (jika >30%)
+   - Limit Toko 40 - 75 Juta  : Cukup BM (jika <=30%) atau RGM (jika >30%)
+   - Limit Toko 75 - 300 Juta : Cukup RGM (jika <=30%) atau HOR/GM (jika >30%)
+   - Limit Toko di atas 300 Jt: HOR atau General Manager (GM)
+
+B. JIKA ADA FAKTUR TUNGGAKAN / OVERDUE:
+   - Terlambat 1 - 2 Hari  : Mulai dari Branch Manager (BM) hingga HOR
+   - Terlambat > 2 Hari    : Mulai dari Regional GM (RGM) hingga General Manager (GM)
+
+================================================================================
+7. CONTEKAN JAWABAN TANYA JAWAB (Q&A UNTUK ORANG AWAM)
+================================================================================
+
+Tanya 1: "Apakah staf admin harus menginstal aplikasi atau software khusus di komputernya?"
+Jawab:
+"Sama sekali tidak perlu. Website ini bisa langsung dibuka lewat link internet 
+di browser apa saja (seperti Google Chrome atau Edge), persis seperti membuka 
+website berita atau portal internet biasa."
+
+Tanya 2: "Bagaimana jika file PDF laporannya sangat panjang dan terdiri dari banyak halaman?"
+Jawab:
+"Sistem membaca seluruh halaman PDF secara utuh dari awal sampai akhir. 
+Bahkan jika rincian satu toko terpotong di tengah halaman dan bersambung ke 
+halaman berikutnya, sistem secara otomatis menggabungkannya menjadi satu data yang utuh."
+
+Tanya 3: "Apakah aman mengunggah laporan perusahaan ke website ini?"
+Jawab:
+"Sangat aman. Dokumen PDF hanya diproses secara instan di memori saat tombol 
+ditekan, dan file tersebut tidak disimpan atau diarsipkan secara publik di internet."
+
+Tanya 4: "Bisakah website ini dibuka dari handphone saat tim sales sedang di lapangan?"
+Jawab:
+"Bisa. Desain websitenya sudah responsif dan menyesuaikan ukuran layar, 
+sehingga tim sales atau pimpinan yang sedang mobile tetap bisa membuka link 
+dan memeriksa laporan order dengan mudah."
+
+Tanya 5: "Bagaimana jika suatu saat ada merek atau kelompok barang baru?"
+Jawab:
+"Sangat mudah disesuaikan. Daftar kelompok barang tersimpan rapi dalam daftar kategori, 
+sehingga jika ada produk baru tinggal didaftarkan namanya tanpa mengganggu fungsi sistem."
+
+================================================================================
+                        AKHIR DOKUMEN PANDUAN
+================================================================================
