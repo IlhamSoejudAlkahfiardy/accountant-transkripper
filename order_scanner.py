@@ -13,7 +13,8 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 if base_dir not in sys.path:
     sys.path.insert(0, base_dir)
 
-from transcriber import (
+from transcriber_factory import (
+    get_active_engine_name,
     load_category_map,
     clean_customer_number,
     format_quantity_with_category,
@@ -55,7 +56,8 @@ if __name__ == "__main__":
         f2 = os.path.join(base_dir, "file", "file_2.pdf")
         target_pdf = f2 if os.path.exists(f2) else os.path.join(base_dir, "file", "file.pdf")
         
-    print(f"Scanning PDF secara dinamis: {target_pdf}")
+    engine_name = get_active_engine_name()
+    print(f"Scanning PDF secara dinamis (Engine: {engine_name.upper()}): {target_pdf}")
     scanned_orders = scan_pdf(target_pdf, cat_path)
     print(f"Ditemukan {len(scanned_orders)} order:")
     print("=" * 60)

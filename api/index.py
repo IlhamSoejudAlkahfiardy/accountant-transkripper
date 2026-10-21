@@ -10,7 +10,7 @@ root_dir = os.path.abspath(os.path.join(current_dir, ".."))
 if root_dir not in sys.path:
     sys.path.insert(0, root_dir)
 
-from transcriber import scan_pdf
+from transcriber_factory import scan_pdf
 
 # Determine static folder path (public folder in root)
 static_dir = os.path.join(root_dir, "public")
