@@ -231,7 +231,8 @@ def parse_order_block(block: dict, category_map: dict) -> dict:
     if not valid_overdues:
         if any(f["overdue"] < 0 for f in faktur_entries):
             min_od = min(f["overdue"] for f in faktur_entries)
-            overdue_display = f"- (Belum Jatuh Tempo: {min_od} Hari)"
+            # overdue_display = f"- (Belum Jatuh Tempo: {min_od} Hari)"
+            overdue_display = f"-"
         elif faktur_entries and not any(f["grup"] == "A" for f in faktur_entries):
             overdue_display = "- (Faktur bukan grup A & Under Limit)"
         else:

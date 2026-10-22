@@ -7,6 +7,9 @@ def evaluate_overdue_display(is_overlimit: bool, grup_produk: str, hari_od: int)
     """
     Logika Ketentuan Baru dari Client untuk Tampilan Overdue:
     ---------------------------------------------------------
+    IF hariOD < 1 THEN
+        {tidak menampilkan Overdue}
+
     IF isOverlimit == TRUE THEN
         {tampilkan Overdue}
     ELSE
@@ -17,12 +20,16 @@ def evaluate_overdue_display(is_overlimit: bool, grup_produk: str, hari_od: int)
                 {tidak menampilkan Overdue}
             END IF
         ELSE
-            {tidak menampilkan Overdue}
+            # {tidak menampilkan Overdue}
+            {menampilkan Overdue}
         END IF
     END IF
     
     Return: (should_display: bool, hari_od: int)
     """
+    if hari_od is None or hari_od < 1:
+            return False, None
+    
     if is_overlimit:
         return True, hari_od
     else:
@@ -32,4 +39,5 @@ def evaluate_overdue_display(is_overlimit: bool, grup_produk: str, hari_od: int)
             else:
                 return False, None
         else:
-            return False, None
+            # {tidak menampilkan Overdue}
+            return True, hari_od
