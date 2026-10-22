@@ -32,4 +32,5 @@ def evaluate_overdue_display(is_overlimit: bool, grup_produk: str, hari_od: int)
             else:
                 return False, None
         else:
-            return False, None
+            # return False, None
+            return True, hari_od
